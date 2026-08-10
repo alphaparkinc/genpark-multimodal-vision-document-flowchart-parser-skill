@@ -1,0 +1,34 @@
+{
+  "name": "genpark-multimodal-vision-document-flowchart-parser-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Vision LLM flowchart, diagram & architectural document structure parser.",
+  "author": "genpark",
+  "category": "analytics",
+  "tags": [
+    "vision-parser",
+    "flowchart-ocr",
+    "diagram-to-mermaid",
+    "multimodal-document"
+  ],
+  "inputs": {
+    "image_file_path": {
+      "type": "string"
+    },
+    "output_format": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "parsed_mermaid_syntax": {
+      "type": "string"
+    },
+    "nodes_count": {
+      "type": "integer"
+    },
+    "parsing_confidence": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
